@@ -1,0 +1,68 @@
+
+ <!DOCTYPE html>
+ <html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Submission Form</title>
+      <!-- <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0"> -->
+      <!-- <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'> -->
+      <link rel="stylesheet" href="styles.css">
+      
+  </head>
+  <body>
+    <div class="row">
+  <div class="col-md-12">
+    <form action="/submit" method="POST" enctype="multipart/form-data">
+      <h1> Submission Form </h1>
+      
+      <fieldset>
+        
+        
+      
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="email" placeholder="Enter your gmail account" required>
+        <label for="impacts">Impacts: (+ for maximum and - for minimun)</label>
+        <input type="text" id="impacts" placeholder="Enter the values seperated by commas(-,+,-,+)" name="impacts" required>
+      
+      
+     
+        <label for="weights">Weights:</label>
+        <input type="text" id="weights" name="weights" placeholder="Enter the values seperated by commas(1,0.1,1,1)" required>
+        
+        <label for="file">CSV file:</label>
+        <input type="file" accept=".csv" id="file" name="upload_file" required>    
+        <label>Is first column of data contains the id(such as roll number, S.No. etc) which is not required in TOPSIS calculation?</label>
+        <input type="radio" id="drop" value="yes" name="drop_column"><label for="drop" class="light">Yes</label><br>
+        <input type="radio" id="drop_no" value="no" name="drop_column" required><label for="drop_no" class="light">No</label>
+        
+      </fieldset>
+    
+     
+      <button type="submit">Submit</button>
+      
+     </form>
+      </div>
+    </div>
+    
+  </body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

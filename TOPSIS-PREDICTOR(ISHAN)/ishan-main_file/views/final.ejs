@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<% if (dimension==="both") { %>
+    <%= message %>
+ <form action="/" method="get">
+    <input type="submit" value="Try again">
+ </form>
+    <% }else if (dimension==="weight") { %>
+        <%= weight %>
+        <form action="/" method="get">
+            <input type="submit" value="Try again">
+         </form>
+
+<% }  else if (dimension==="impact") { %>
+    <%= impacts %>
+    <form action="/" method="get">
+        <input type="submit" value="Try again">
+     </form>
+    <% }  else if (dimension==="matched") { %>
+        <%= a %> 
+        <p><%- "or you can download from" %> <a href="<%= b %>">this link</a></p>
+        <form action="/" method="get">
+            <input type="submit" value="Go To Home Page">
+         </form>
+        <% } else { %>
+         <%= error %>
+         <form action="/" method="get">
+            <input type="submit" value="Try again">
+         </form>
+         <% } %>
+ 
+</body>
+</html>
